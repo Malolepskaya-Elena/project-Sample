@@ -14,7 +14,7 @@ public class SchemaTest {
         .when()
         .get("/demo/accounts")
         .then()
-        .statusCode(500)
+        .statusCode(200)
         .body(matchesJsonSchemaInClasspath("accounts.schema.json"));
     }
 }
